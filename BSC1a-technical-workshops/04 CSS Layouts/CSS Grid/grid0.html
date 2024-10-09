@@ -23,7 +23,11 @@
 
         .container {
             /* Add CSS Grid properties here */
-            display: block;
+            display: grid;
+            /* when using element below you can add multiple sizes within the same line of code. */
+            grid-template-columns: repeat(3,1fr) 500px;
+            gap: 15px;
+            grid-auto-rows: minmax(100px, auto);
             /* CSS Grid properties end */
         }
 
